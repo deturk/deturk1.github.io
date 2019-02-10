@@ -1,0 +1,130 @@
+/* This is the stylesheet for the weather site */
+
+/* Table of Contents
+1. Imports
+2. General rules
+3. Mobile first rules
+4. Larger screen rules
+
+Section 1 - Imports */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('normalize.css');
+
+/* Section 2 - General Rules */
+header{
+    background-color: #0e89d5;
+    display: inline-block;
+    width: 100%
+}
+
+header img{
+float: left;
+max-width: 60px;
+}
+
+#site-brand {
+    font-size: 2em;
+    margin-top: 0;
+    margin-left: 10px;
+    display: inline;
+    font-weight: 600;
+}
+
+h1 {
+    position: relative;
+  }
+  
+  #heading h2 {
+    font-size: 3em;
+    margin: 1.5px 0 0 auto;
+  }
+  
+  #heading p {
+    margin: 2px 0 0 auto;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 20px;
+  }
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Sansita', sans-serif;
+}
+
+#content {
+    background-image: url("/weather-site-images/images/rain.jpg");
+}
+
+.tile {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 15px;
+  }
+
+  #summary #rainy-weather {
+    max-width: 300px;
+  }
+
+  nav a {
+    display: inline-block;
+    list-style: none;
+    background-color: #0e89d5;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+  }
+  
+  a:hover a:active {
+    background-color: #0e8900;
+  }
+  
+  nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #0e89d5;
+    width: 100%;
+  }
+  
+  a:link a:visited {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  footer {
+    margin-bottom: 2em;
+  }
+  
+  #copyright {
+    background-color: #0e89d5;
+  }
+  
+  #high {
+    color: red;
+  }
+  
+  #low {
+    color: blue;
+  }
+  
+  /* 3. Mobile Styles*/
+  
+  /* 4. Large Screens*/
+
+
+
