@@ -24,6 +24,7 @@ header {
   
   #site-brand {
     font-size: 2em;
+    margin-top: 0;
     margin-left: 10px;
     display: inline;
     font-weight: 600;
