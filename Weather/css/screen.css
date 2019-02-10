@@ -24,7 +24,6 @@ Section 1 - Imports */
   
   #site-brand {
     font-size: 2em;
-    margin-top: 0%;
     margin-left: 10px;
     display: inline;
     font-weight: 600;
@@ -131,9 +130,6 @@ Section 1 - Imports */
       height: auto;
   }
 
-  .wind{
-
-  }
   /* 4. Large Screens*/
 
 
