@@ -72,7 +72,7 @@ Section 1 - Imports */
     text-align: center;
     border: 1px solid;
     border-radius: 15px;
-  }
+  } 
   
   *, *:before, *:after {
     box-sizing: inherit;
