@@ -11,26 +11,26 @@ Section 1 - Imports */
 @import url('normalize.css');
 
 /* Section 2 - General Rules */
-header{
+header {
     background-color: #0e89d5;
     display: inline-block;
-    width: 100%
-}
-
-header img{
-float: left;
-max-width: 60px;
-}
-
-#site-brand {
+    width: 100%;
+  }
+  
+  #logo {
+    float: left;
+    max-width: 60px;
+  }
+  
+  #site-brand {
     font-size: 2em;
-    margin-top: 0%;
+    margin-top: 0;
     margin-left: 10px;
     display: inline;
     font-weight: 600;
-}
-
-h1 {
+  }
+  
+  h1 {
     position: relative;
   }
   
@@ -57,27 +57,32 @@ h1 {
     font-family: helvetica, verdana, sans-serif;
     font-size: 20px;
   }
-
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Sansita', sans-serif;
-}
-
-#content {
-    background-image: url("/weather-site-images/images/rain.jpg");
-}
-
-.tile {
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Sansita, Eurostyle, sans-serif;
+  }
+  
+  #content {
+    background-image: url("../images/rain.jpg");
+  }
+  
+  .tile {
     background-color: rgba(200, 200, 200, .6);
     margin: .2em auto;
     text-align: center;
     border: 1px solid;
     border-radius: 15px;
   }
-
+  
   #summary #rainy-weather {
     max-width: 300px;
   }
-
+  
   nav a {
     display: inline-block;
     list-style: none;
@@ -125,6 +130,5 @@ h1,h2,h3,h4,h5,h6{
   /* 3. Mobile Styles*/
   
   /* 4. Large Screens*/
-
 
 
