@@ -116,11 +116,11 @@ Section 1 - Imports */
     background-color: #0e89d5;
   }
   
- .high {
+ #high {
     color: red;
   }
   
-  .low {
+  #low {
     color: blue;
   }
   
