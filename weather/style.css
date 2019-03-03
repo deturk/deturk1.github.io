@@ -145,8 +145,41 @@ a:hover a:active {
   width: 150px;
   background: no-repeat center/85% url("../images/wind-pointer.png");
   z-index: 100;
-  margin: -.6em auto 0; 
+  margin: .6em auto 0; 
 }
+
+.n {
+  transform: rotate(0deg);
+}
+
+.ne {
+  transform: rotate(45deg);
+}
+
+.e {
+  transform: rotate(90deg);
+}
+
+.se {
+  transform: rotate(135deg);
+}
+
+.s {
+  transform: rotate(180deg);
+}
+
+.sw {
+  transform: rotate(225deg);
+}
+
+.w {
+  transform: rotate(270deg);
+}
+
+.nw {
+  transform: rotate(315deg);
+}
+
 /*Summary Picture*/
 #summary #rainy-weather {
   max-width: 300px;
@@ -154,6 +187,12 @@ a:hover a:active {
 }
 
 /*End of Summary Pitcure*/
+/*Lists*/
+ul li {
+  font-family: helvetica, verdana, sans-serif;
+}
+
+/*End of Lists*/
 /*End of Main Content*/
 /*Footer*/
 #copyright {
@@ -161,74 +200,82 @@ a:hover a:active {
 }
 
 footer {
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
 }
 
 /*End of Footer*/
 /* 3. Mobile Styles*/
-#wind {
-  position: relative;
-}
-
-#mph {
-  font-size: 30px;
-  position: absolute;
-  top: 47.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* 4. For Large Screens*/
-
-@media screen and (min-width: 700px) {
-
-
+@media screen AND (max-width: 700px) {
   #wind {
     position: relative;
   }
-
-  #mph {
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-
-/*Media query for small screens*/
-@media screen and (min-width: 450px) {
-  #wind {
-    position: relative;
-  }
-
-  #mph {
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  /* Background Images - Use with medium screens */
-  .page-header .page-nav {
-    position: relative;
-  }
-
-  .page-nav li {
-    flex: 0 1 20%;
-  }
-
-  .main {
-    line-height: 1.375;
-  }
-
-  .featured-image {
-    margin: 0 1em 1em 0;
-    float: left;
-    width: 50%;
-  }
-
   
+  #mph {
+    font-size: 30px;
+    position: absolute;
+    top: 42%;
+    left: 40.5%;
+  }
+
+  div.large-images {
+    display: none;
+  }
+
+  section.rain {
+    background-image: url("../images/rain-small.jpg");
+  }
+
+  section.clouds {
+    background-image: url("../images/clouds-small.jpg");
+  }
+
+  section.clear {
+    background-image: url("../images/clear-small.jpg");
+  }
+
+  section.fog {
+    background-image: url("../images/fog-small.jpg");
+  }
+
+  section.snow {
+    background-image: url("../images/snow-small.jpg");
+  }
+}
+
+/* 4. Large Screens*/
+@media screen AND (min-width: 700px) {
+  #wind {
+    position: relative;
+  }
+
+  #mph {
+    font-size: 30px;
+    position: absolute;
+    top: 47.5%;
+    left: 50%;
+  }
+
+  div.small-images {
+    display: none;
+  }
+
+  section.rain {
+    background-image: url("../images/rain-large.jpg");
+  }
+
+  section.clouds {
+    background-image: url("../images/clouds-large.jpg");
+  }
+
+  section.clear {
+    background-image: url("../images/clear-large.jpg");
+  }
+
+  section.fog {
+    background-image: url("../images/fog-large.jpg");
+  }
+
+  section.snow {
+    background-image: url("../images/snow-large.jpg");
+  }
 }
