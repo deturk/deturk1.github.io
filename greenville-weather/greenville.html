@@ -2,7 +2,7 @@
 <html lang='en-us'>
 
 <head>
-    <title>Franklin, ID | Weather Site</title>
+    <title id='page-title'> | Weather Site</title>
     <meta charset="utf-8">
     <meta name='viewport' content="width=device-width">
     <meta name='author' content='Elijah De-Graft Turkson'>
@@ -12,50 +12,57 @@
 
 <body>
         <header id="page-header">
-          <img id="logo" src="images/logo.jpeg" alt="logo">
+          <img id="logo" src="/greenville-weather/images/logo.jpeg" alt="logo">
           <h1 id="site-brand">The Weather Site</h1>
         </header>
         <nav id="navforpage">
-          <a href="franklin-weather.html">Current</a>
-          <a href="https://www.google.com">Search</a>
-          <a href="franklin-weather.html">Franklin</a>
-          <a href="greenville-weather/greenville-weather.html">Greenville</a>
+          <a href="#">Current</a>
+          <a href="#">Search</a>
+          <a href="../weather/franklin-weather.html">Franklin</a>
+          <a href="greenville.html">Greenville</a>
         </nav>
-        <main>
-          <section id="heading">
-            <h2>Franklin, Idaho</h2>
 
-            <p id='elev'><strong>Zip: </strong>83237 |&nbsp; <strong>Elevation:&nbsp; </strong><div id='elevation'>1514.246</div> ft. |&nbsp; <strong>Location: &nbsp;</strong>42.07&#176; N, 111.97&#176; W</p>
+        <section id="status">Please be patient while I get your weather information.</section>
+        
+        <main id='main-content' class='hide'>
+          <section id="heading">
+            <h2 id='nameofcity'>Change</h2>
+
+            <span id='elev'><strong>Zip: </strong>83237 |&nbsp; <strong>Elevation:&nbsp; </strong></span><span id='elevation'>1514.246</span><span id='lol'> ft. |&nbsp; </span><strong>Location: &nbsp;</strong><span id='cord'>42.07&#176; N, 111.97&#176; W</span>
 
           </section>
           <section id="content" class='rain'>
             <section id="temp" class="tile">
               <h2>Temperature</h2>
-              <h3 id="deg"><div id='realtemp'>40</div>&deg;F</h3>
+              <h3 id="deg"><span id='realtemp'>40</span>&deg;F</h3>
               <p>
                 <span id="high-temp">64&deg;F</span>
                 <span id="low-temp">41&deg;F</span>
                 <p id="feels-like">Feels like <span id="feels">40</span>&deg;F</p> <br><br>
             </section>
+
+
             <section id="wind" class="tile">
-              <h2>Wind</h2>
+              <h2 id='weather-condition'>Wind</h2>
               <section id='test'>
                 <div id="dial" class='s'></div>
                 <div id='mph'>5 mph</div>
               </section>
-              <p><strong>Direction: </strong>SW</p>
-              <p><strong>Gusts: </strong>10-12</p>
+              <p id='direction'><strong>Direction: </strong>SW</p>
+              <p id='gusts'><strong>Gusts: </strong>10-12</p>
             </section>
+
+
             <section id="summary" class="tile">
-              <h2>Clear</h2>
-              <img id="weather-picture" src="images/snow-small.jpg" alt="pic of weather conditions">
+              <h2>Rain</h2>
+              <img id="weather-picture" src="/weather/images/clear-small.jpg" alt="pic of weather conditions">
             </section>
           </section>
         </main>
         <footer>
           <section id="hourly-forecast" class="tile">
             <h2>Hourly Forecast</h2>
-            <ul>
+            <ul id='hourly-info'>
               <li>10am: 41&deg;F | </li>
               <li>11am: 41&deg;F | </li>
               <li>12pm: 41&deg;F | </li>
@@ -73,9 +80,7 @@
           </section>
           <p id="copyright">&copy;Elijah De-Graft Turkson &mdash; 2019 The Weather Site</p>
         </footer>
-        <script src="javascript/script.js">
-          /* I guess that this is where it goes. I put my JS in the header at first and was having problems with all of it.
-          */
-        </script>
+        <script src="javascript/localdata.js"></script>
+        <script src="javascript/functions.js"></script>
       </body>
 </html>

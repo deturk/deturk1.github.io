@@ -4,59 +4,6 @@
 // Making sure the JS file is working //
 console.log('My JS is being Read.');
 
-
-
-// busDriver is going to call all of my other functions and run all my test cases.
-// Not of crazy significance, but it will help me debug it all out.
-function busDriver() {
-   // Get the condition and change the image //
-   const condition = getCondition("snowy");
-   changeSummaryImage(condition);
-
-   // testing the buildWC function with temp and speed variables created //
-   const temp = 31;
-   const speed = 5;
-   buildWC(speed, temp);
-
-   // Calling the windDial function to test weather the dial accurately changes.
-   windDial('e');
-
-   // Calling to convertMeters function
-   let meters = 1514.246;
-
-   console.log("Meters: " + meters);
-   let feet = convertMeters(meters);
-   console.log("Feet: " + feet);
-
-   // Changing the innerHTML of the elevation ID for its paragraph tag
-   setElevation(feet);
-
-   // Setting the nextHour to currentHour + 1
-   let date = new Date(); 
-   let nextHour = date.getHours() + 1;
-}
-
-// Calls the busDriver()
-busDriver();
-
-
-// // FETCH API
-// fetch(URL)
-//    .then(function(response) {
-//       if(response.ok){
-//       return response.json();
-//       }
-//       throw new ERROR('Network response was not OK.');
-//    })
-//    .then(function(data){
-//       ... do something with the JavaScript object ...
-//    })
-//    .catch(function(error){
-//    console.log('There was a fetch problem: ', error.message);
-//  })
-
-
-
 // windDial is what will set the addribute of the dial class //
 function windDial(direction){
    // get the dial class
@@ -231,11 +178,29 @@ function buildHourlyData(nextHour,hourlyTemps) {
    // The hourlyTemps variable holds an array of temperatures
    // Line 8 builds a list item showing the time for the next hour 
    // and then the first element (value in index 0) from the hourly temps array
-    let hourlyListItems = '<li>' + format_time(nextHour) + ': ' + hourlyTemps[0] + '&deg;F</li>';
+    let hourlyListItems = '<li>' + format_time(nextHour) + ': ' + hourlyTemps[0] + '&deg;F | </li>';
+    let i = 1;
     // Build the remaining list items using a for loop
-    for (let i = 1, x = hourlyTemps.length; i < x; i++) {
-     hourlyListItems += '<li>' + format_time(nextHour + i) + ': ' + hourlyTemps[i] + '&deg;F</li>';
+    for (i = 1, x = hourlyTemps.length - 1; i < x; i++) {
+     hourlyListItems += '<li>' + format_time(nextHour + i) + ': ' + hourlyTemps[i] + '&deg;F | </li>';
     }
+    hourlyListItems += '<li>' + format_time(nextHour + i) + ': ' + hourlyTemps[i] + '&deg;F</li>';
     console.log('HourlyList is: ' + hourlyListItems);
     return hourlyListItems;
+   }
+
+   function getSign(isLat, num){
+      if (num > 0){
+         if(isLat == true){
+            return 'N';
+         } else {
+            return 'E';
+         }
+      } else {
+         if(isLat == true) { 
+            return 'S';
+         } else {
+            return 'W';
+         }
+      }
    }
