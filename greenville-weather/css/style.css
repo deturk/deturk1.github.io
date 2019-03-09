@@ -255,7 +255,7 @@ footer {
     /*small screen images */
 
 .clear {
-    background-image: url("/weather/images/clear-large.jpg");
+    background-image: url("/weather/images/clear-small.jpg");
 }
 .rain {
     background-image: url("/weather/images/rain-small.jpg");
