@@ -98,6 +98,8 @@ console.log("working 3");
     // Set the current conditions information
     const sendCondition = getCondition(conditions);
     changeSummaryImage(sendCondition);
+    console.log( sendCondition);
+    document.getElementById('condition').innerHTML = conditions;
 
         // Set the hourly temperature information //
     // Setting the nextHour to currentHour + 1

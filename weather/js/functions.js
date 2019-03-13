@@ -171,7 +171,7 @@ function getCondition(statement) {
    } else if (statement == 'pouring' || 
               statement == 'raining' || 
               statement == 'raining cats and dogs' || 
-              statement == 'dumping buckets' || 
+              statement == 'thunderstorms' || 
               statement == 'rain' || 
               statement == 'precipitation' || 
               statement == 'high precipitation' || 
