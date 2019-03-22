@@ -116,8 +116,26 @@ function getWeather(stationId) {
       // Store weather information to localStorage 
    
    
+
+
+
+
+
+
+
+      
       // Build the page for viewing 
       
+
+
+
+
+
+
+
+
+
+
      }) 
     .catch(error => console.log('There was a getWeather error: ', error)) 
    } // end getWeather function
