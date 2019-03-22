@@ -1,61 +1,109 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-	<meta charset="utf-8">
-	<title>The Grand Canyon | Responsive Media Demo</title>
-	<meta name="viewport" content="width=device-width">
-	<link href='css/style.css' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
-	<div class="wrapper">
-		<header class="page-header">
-			<h1>Responsive Media Demo</h1>
-		</header>
-		<nav class="page-nav">
-			<ul>
-				<li><a href="#" title="Fake home page link">Home</a></li>
-				<li><a href="#" title="Fake trails page link">Trails</a></li>
-				<li><a href="#" title="Fake lodging page link">Lodging</a></li>
-				<li><a href="#" title="Fake history page link">History</a></li>
-			</ul>
-		</nav>
-		<main class="main">
-
-			<h1 class="main-title">Grand Canyon National Park</h1>
-
-			<figure class="featured-image">
-				<img src="" alt="Picture from the Grand Canyon">
-
-				<figcaption class="image-caption">
-					Fun in the Grand Canyon
-				</figcaption>
-			</figure>
-
-			<p>
-				Doctrina iis elit admodum do occaecat o tamen ex expetendis quorum arbitror, nostrud labore iis tempor despicationes, voluptate non duis est ea nulla arbitror proident, ne quem duis noster offendit, si labore enim e incurreret. Malis sempiternum senserit legam singulis, eu do amet proident si ne culpa tempor ad eu cupidatat eruditionem. Aute e laborum ab noster, ab velit nescius. Enim laboris qui exquisitaque, quorum qui incurreret. Eram se sed illum nescius. Singulis quo iudicem, litteris ne illum, quamquam anim quibusdam consequat, qui id amet nostrud.
-			</p>
-
-			<p>
-				Eu aute iis lorem. Ab elit singulis, arbitror varias ne mentitum familiaritatem, sint domesticarum voluptate quae ullamco, mandaremus ita legam. Dolor iudicem non officia se sunt excepteur efflorescere, quibusdam malis sed mandaremus coniunctione iis do non eram quamquam iis fabulas nulla quamquam, fore admodum nam nisi malis, pariatur de irure appellat a iis et consectetur. Tamen iudicem ex velit varias, aut fugiat nisi te quamquam. Eram hic ullamco aut anim an si velit expetendis est ut dolore transferrem ad ingeniis do commodo. Ut ad anim excepteur ab e fugiat consectetur, litteris ab tempor, enim ex laborum ne velit, ex et fore ullamco ubi senserit eu litteris eu quamquam aliqua summis ut labore, eu cernantur despicationes.
-			</p>
-
-			<p>
-				Mandaremus minim o expetendis consectetur. Aliqua exercitation mandaremus amet arbitror. Proident ne quis voluptate. Litteris nulla eram voluptate anim a amet commodo relinqueret. Ne dolor consectetur in ingeniis sed laborum. Summis exercitation aliquip legam quamquam, laboris cillum labore o dolore. Varias ubi probant ab labore.
-			</p>
-
-		</main>
-		<footer class="page-footer">
-			<ul>
-				<li>&copy; Fake Copyright Notice</li>
-				<li>Contact</li>
-				<li>About</li>
-			</ul>
-			<p>Last Updated: today</p>
-			<p class="credits">Photo Credits: Grand Canyon Images - (Blaine Robertson); National Park Service Logo - (National Park Service)</p>
-		</footer>
-	</div>
-</body>
-
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Responsive Media</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="De-Graft">
+  <meta name="description" content="Responsive Media for the Franklin, Weather Page">
+  <link rel="stylesheet" href="">
+ </head>
+ <body>
+  <header>Media</header>
+  <nav>
+      Navigation Links Go Here
+    <ul>
+        <li>
+            <a href="../index.html">Home</a>
+        </li>
+       
+    </ul>
+</nav>
+  <main>
+    <section id="clear">
+        <picture>
+            <source media="(min-width: 700px)" srcset="responsive-images-folder/clear-large.jpg">
+            <img src="responsive-images-folder/clear-small.jpg" alt="photo of clear weather">
+        </picture>
+        <ul class='large'>
+            <li>Name: clear-large.jpg</li>
+            <li>Dimensions: 900 x 563</li>
+            <li>Weight: 98.3kb</li>
+        </ul>
+        <ul class='small'>
+            <li>Name: clear-small.jpg</li>
+            <li>Dimensions: 400 x 250</li>
+            <li>Weight: 35.4kb</li>
+        </ul>
+    </section>
+    <section id="rain">
+        <picture>
+            <source media="(min-width: 700px)" srcset="responsive-images-folder/rain-large.jpg">
+            <img src="responsive-images-folder/rain-small.jpg" alt="photo of rain on window">
+        </picture>
+        <ul class='large'>
+            <li>Name: rain-large.jpg</li>
+            <li>Dimensions: 900 x 600</li>
+            <li>Weight: 89.5kb</li>
+        </ul>
+        <ul class='small'>
+            <li>Name: rain-small.jpg</li>
+            <li>Dimensions: 400 x 267</li>
+            <li>Weight: 23.4kb</li>
+        </ul>
+    </section>
+    <section id="cloud">
+        <picture>
+            <source media="(min-width: 700px)" srcset="responsive-images-folder/clouds-large.jpg">
+            <img src="responsive-images-folder/clouds-small.jpg" alt="photo of cloudy weather">
+        </picture>
+        <ul class='large'>
+            <li>Name: clouds-large.jpg</li>
+            <li>Dimensions: 900 x 900</li>
+            <li>Weight: 100kb</li>
+        </ul>
+        <ul class='small'>
+            <li>Name: clouds-small.jpg</li>
+            <li>Dimensions: 400 x 400</li>
+            <li>Weight: 35.6kb</li>
+        </ul>
+    </section>
+    <section id="fog">
+        <picture>
+            <source media="(min-width: 700px)" srcset="responsive-images-folder/fog-large.jpg">
+            <img src="responsive-images-folder/fog-small.jpg" alt="photo of clear weather">
+        </picture>
+        <ul class='large'>
+            <li>Name: fog-large.jpg</li>
+            <li>Dimensions: 900 x 506</li>
+            <li>Weight: 19.7kb</li>
+        </ul>
+        <ul class='small'>
+            <li>Name: fog-small.jpg</li>
+            <li>Dimensions: 400 x 225</li>
+            <li>Weight: 11.7kb</li>
+        </ul>
+    </section>
+    <section id="snow">
+        <picture>
+            <source media="(min-width: 700px)" srcset="responsive-images-folder/snow-large.jpg">
+            <img src="responsive-images-folder/snow-small.jpg" alt="photo of clear weather">
+        </picture>
+        <ul class='large'>
+            <li>Name: snow-large.jpg</li>
+            <li>Dimensions: 600 x 900</li>
+            <li>Weight: 95.6kb</li>
+        </ul>
+        <ul class='small'>
+            <li>Name: snow-small.jpg</li>
+            <li>Dimensions: 267 x 400</li>
+            <li>Weight: 33kb</li>
+        </ul>
+    </section>
+  </main>
+  <footer>
+   <p>&copy; De-Graft, 2019-01-18</p>
+  </footer>
+ </body>
 </html>
