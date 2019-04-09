@@ -21,8 +21,7 @@ body {
   padding: 0;
   font-family: helvetica arial sans-serif;
 
-  background-size: cover;
-  background-repeat: no-repeat;
+ 
 }
 
 
@@ -35,6 +34,7 @@ body>div {
 
 #home-backgnd{
   background-image: url("/acme/images/site/background.jpg");
+  background-size: cover;
 }
 
 /*small Header settings*/
@@ -113,7 +113,7 @@ body>div {
   color: #990033;
   display: flex;
   justify-content: flex-end;
-  background-image: url(/acme/images/site/feature.jpg);
+  background-image: url("/acme/images/site/feature.jpg");
   background-repeat: no-repeat;
   padding-bottom: 100%;
 
@@ -269,7 +269,7 @@ footer {
     margin-bottom: 0;
     padding: 0; /* ditto for padding */
     font-family: helvetica arial sans-serif; /* changes main font to helvetica */
-    background-image: url(/acme/images/site/background.jpg);
+    background-image: url("/acme/images/site/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 20px;
@@ -279,7 +279,7 @@ footer {
   body>div {
     max-width: 55em;
     margin: 0 auto;
-    background-color: #ffffff;
+   /* background-color: #ffffff; */
 
   }
 
@@ -363,7 +363,7 @@ footer {
     display: flex;
     justify-content: flex-end;
 
-    background-image: url(/acme/images/site/feature.jpg);
+    background-image: url("/acme/images/site/feature.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 140px;
